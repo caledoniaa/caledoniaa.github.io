@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website for Caledonia Abbey</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffcc;
+            color: #000000;
+            margin: 0;
+            padding: 10px;
+            background-image: url(images/sloth.jpeg);
+        }
+
+        /* Header */
+        header {
+            text-align: left;
+            background-color: #3333ff;
+            color: #ffffff;
+            padding: 10px;
+            border: 3px solid #ffcc00;
+            font-size: 24px;
+            font-family: "comic sans"
+        }
+        .header-3d {
+            font-family: 'Comic Sans MS';
+            font-size: 80px;
+            font-weight: bold;
+            color: magenta;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 0 #000, 6px 6px 0 rgba(0, 0, 0, 0.5);
+            letter-spacing: 5px;
+            text-align: center;
+        }
+
+        /* Navigation on the left */
+        .left-column {
+            background-color: #ffcc00;
+            padding: 10px;
+            width: 150px;
+            float: left;
+            border: 3px solid #3333ff;
+            height: 100vh;
+        }
+
+        .left-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .left-column ul li {
+            margin: 15px 0;
+        }
+
+        .left-column ul li a {
+            text-decoration: none;
+            color: #0000ff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .left-column ul li a:visited {
+            color: #990099;
+        }
+
+        /* Main content area */
+        .right-column {
+            margin-left: 170px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border: 3px solid #3333ff;
+
+        }
+
+        /* Right column h2 */
+        .right-column h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Simple footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #000000;
+        }
+
+        .image-grid img {
+            border: 2px solid #3333ff;
+        }
+
+        /* GIF element */ 
+        .fun-gif {
+            display: block;
+            margin: 0 auto;
+            border: 3px solid #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <marquee >Thank you for visiting my Website! - Cali
+
+        </marquee>
+    </header>
+
+    <div class="left-column">
+        <ul>
+  
+            <li><a href="index.html" onclick="showContent('page4')">Normal </a></li>
+            <li><a href="niceimages.html" onclick="showContent('page4')">animation </a></li>
+            <li><a href="#page1" onclick="showContent('page5')">contact</a></li>
+
+        </ul>
+    </div>
+
+    <div class="right-column">
+        <div id="page1" class="content">
+            <div class="header-3d">My Movies</div>
+            <p>Coney 2012</p>
+            <div class="image-grid">
+                <img src="images/liamwide.jpg" alt="Image 1" width="150">
+                <img src="images/still3.jpg" alt="Image 2" width="150">
+                <img src="images/still4.jpg" alt="Image 3" width="150">
+                <img src="images/ride.jpg" alt="Image 4" width="150">
+            </div>
+            <p><a href="https://vimeo.com/994867793">Watch it!</a></p>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/1076738718?h=50ce575401" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+            <p>Busybody</p>
+            <div class="image-grid">
+                <img src="images/bbstill2beg.jpeg" alt="Image 1" width="150">
+                <img src="images/bbstillnat.jpg" alt="Image 2" width="150">
+                <img src="images/bbstill6.jpg" alt="Image 3" width="150">
+                <img src="images/bbstill3.jpg" alt="Image 4" width="150">
+            </div>
+
+            <p>PO Box Late on Rent</p>
+            <div class="image-grid">
+                <iframe src="https://player.vimeo.com/video/662511517?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="PO Box Late on Rent"></iframe>
+            </div>
+            
+        
+        </div>
+
+        <div id="page2" class="content">
+
+            <h2>Bio</h2> 
+        <p> Caledonia Abbey is a very talented filmmaker. Brown hair. Wasian. This is a photo of me that I find charming, even if it is not very professional</p>
+     <img src="images/polaroid.png" alt="Bio Image" class="fun-gif" width="250" height="150"> 
+            <p>NYU: Film & TV Production, Linguistics, Politics<br>Chicago</p>
+        </div>
+
+        <div id="page3" class="content">
+    
+            <h2>Resume</h2>
+        <p>   Go back to normal mode. You know where to look.  </p>
+        </div>
+
+        <div id="page5" class="content">
+            <h2>Contact</h2>
+            <p>Email: caledoniaabbey@gmail.com</p>
+            <p><a href="https://www.instagram.com/caledoniaa3/">Instagram</a></p>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>Caledonia Abbey made this website</p>
+    </footer>
+
+    <script>
+        function showContent(pageId) {
+            // Hide all content divs
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.style.display = 'none';
+            });
+
+            // Show the selected content
+            var selectedContent = document.getElementById(pageId);
+            selectedContent.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cali's fun text based internet game</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 2fr 1fr;
+            height: 20vh;
+        }
+
+        /* Header */
+        header {
+            grid-column: span 2;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        /* Left column (links) */
+        .left-column {
+            background-color: #ffffff;
+            padding: 3px;
+
+        }
+
+        .left-column ul {
+            list-style-type: none;
+            padding: 08px;
+        }
+
+        .left-column ul li {
+            margin: 5px 0;
+        }
+
+        .left-column ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            line-height: 10px;
+        }
+
+        .left-column ul li a:hover {
+            color: #007BFF;
+        }
+
+        .left-column ul li a:selection {
+            color: #007BFF;
+        }
+
+        /* Right column (content) */
+        .right-column {
+            padding: 8px;
+        }
+
+        .right-column img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .right-column h2 {
+            margin-top: 0;
+        }
+
+        /* Content hidden by default */
+        .content {
+            display: none;
+        }
+
+        /* Show first content by default */
+        #page1 {
+            display: block;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+            gap: 10px; /* Space between images */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>     Caledonia Abbey</p>
+    </header>
+
+    <div class="left-column">
+        <ul>
+            <li><a href="index.html" onclick="showContent('page1')"> back to website</a></li>
+            <li><a href="gameweb.html" onclick="showContent('page1')"> start over</a></li>
+       
+        </ul>
+    </div>
+
+    <div class="right-column">
+
+        <div id="page1" class="content">
+
+          <p> Welcome to the game. Do you pick A or B </p>
+
+    
+          <a href="#page1" onclick="showContent('page2')">A</a>
+          <br>
+          <a href="#page1" onclick="showContent('page3')">B</a>
+
+</div>
+     
+        <div id="page2" class="content">
+           <p> you've picked choice A, now do you pick AA or AB >
+           </p>
+           <a href="#page1" onclick="showContent('page4')">AA</a>
+           <br>
+           <a href="#page1" onclick="showContent('page5')">AB</a>
+        </div>
+
+        <div id="page3" class="content">
+            <p> you've picked choice B, now do you pick choice BA or BB? </p>
+
+            <a href="#page1" onclick="showContent('page6')">BA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page7')">BB</a>
+
+        </div>
+
+        <div id="page4" class="content">
+
+            <p> you have picked AA </p>
+            <a href="#page1" onclick="showContent('page8')">AAA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page9')">AAB</a>
+
+        </div>
+
+        <div id="page5" class="content">
+
+            <p> you have picked AB </p>
+
+            <a href="#page1" onclick="showContent('page10')">ABA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page11')">ABB</a>
+
+
+        </div>
+
+        <div id="page6" class="content">
+
+            <p> you have picked BA </p>
+            <a href="#page1" onclick="showContent('page12')">BAA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page13')">BAB</a>
+
+        </div>
+
+        <div id="page7" class="content">
+
+            <p> you have picked BB </p>
+            <a href="#page1" onclick="showContent('page14')">BBA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page15')">BBB</a>
+
+        </div>
+
+        <div id="page8" class="content">
+
+            <p> you have picked AAA </p>
+
+            <a href="#page1" onclick="showContent('page16')">AAAA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page17')">AAAB</a>
+
+        </div>
+
+        <div id="page9" class="content">
+
+            <p> you have picked AAB </p>
+            <a href="#page1" onclick="showContent('page18')">AABA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page19')">AABB</a>
+
+        </div>
+
+        <div id="page10" class="content">
+
+            <p> you have picked ABA </p>
+            <a href="#page1" onclick="showContent('page20')">ABAA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page21')">ABAB</a>
+
+        </div>
+
+        <div id="page11" class="content">
+
+            <p> you have picked ABB </p>
+
+            <a href="#page1" onclick="showContent('page22')">ABBA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page23')">ABBB</a>
+
+        </div>
+
+        <div id="page12" class="content">
+
+            <p> you have picked BAA </p>
+
+            <a href="#page1" onclick="showContent('page24')">BAAA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page25')">BAAB</a>
+
+        </div>
+
+        <div id="page13" class="content">
+
+            <p> you have picked BAB </p>
+
+            <a href="#page1" onclick="showContent('page26')">BABA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page27')">BABB</a>
+
+        </div>
+
+        <div id="page14" class="content">
+
+            <p> you have picked BBA </p>
+
+            <a href="#page1" onclick="showContent('page28')">BBAA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page29')">BBAB</a>
+
+        </div>
+
+        <div id="page15" class="content">
+
+            <p> you have picked BBB </p>
+
+
+            <a href="#page1" onclick="showContent('page30')">BBBA</a>
+            <br>
+            <a href="#page1" onclick="showContent('page31')">BBBB</a>
+
+        </div>
+
+        <div id="page16" class="content">
+
+            <p> you have picked AAAA </p>
+            <audio controls>
+  <source src="images/scream.mp3" >
+ 
+</audio>
+
+
+        </div>
+
+        <div id="page17" class="content">
+
+            <p> you have picked AAAB </p>
+
+        </div>
+
+        <div id="page18" class="content">
+
+            <p> you have picked AABA </p>
+
+        </div>
+
+        <div id="page19" class="content">
+
+            <p> you have picked AABB </p>
+
+        </div>
+
+        <div id="page20" class="content">
+
+            <p> you have picked ABAA </p>
+
+        </div>
+
+        <div id="page21" class="content">
+
+            <p> you have picked ABAB </p>
+              <img src="images/fish.jpg" alt="BAAA">
+            
+
+        </div>
+
+        <div id="page22" class="content">
+
+            <p> you have picked ABBA </p>
+            <img src="images/abba.jpg" alt="ABBA">
+
+        </div>
+
+
+        <div id="page23" class="content">
+
+            <p> you have picked ABBB </p>
+
+        </div>
+
+        <div id="page24" class="content">
+
+            <p> you have picked BAAA </p>
+              <img src="images/sheep.jpg" alt="BAAA">
+
+        </div>
+
+        <div id="page25" class="content">
+
+            <p> you have picked BAAB </p>
+
+        </div>
+
+        <div id="page26" class="content">
+
+            <p> you have picked BABA </p>
+
+        </div>
+
+        <div id="page27" class="content">
+
+            <p> you have picked BABB </p>
+
+        </div>
+
+        <div id="page28" class="content">
+
+            <p> you have picked BBAA </p>
+
+        </div>
+
+        <div id="page29" class="content">
+
+            <p> you have picked BBAB </p>
+
+        </div>
+
+        <div id="page30" class="content">
+
+            <p> you have picked BBBA </p>
+
+        </div>
+
+        <div id="page31" class="content">
+
+            <p> you have picked BBBB </p>
+            <img src="images/bee1.jpg" alt="BBBB1">
+            <img src="images/bee2.jpg" alt="BBBB2">
+            <img src="images/bee3.jpg" alt="BBBB3">
+            <img src="images/bee4.jpg" alt="BBBB4">
+
+        </div>
+
+
+    </div>
+
+    <script>
+        function showContent(pageId) {
+            // Hide all content divs
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.style.display = 'none';
+            });
+
+            // Show the selected content
+            var selectedContent = document.getElementById(pageId);
+            selectedContent.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+

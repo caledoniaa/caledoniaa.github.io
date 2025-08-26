@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website for Caledonia Abbey</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffcc;
+            color: #000000;
+            margin: 0;
+            padding: 10px;
+            background-image: url(images/sloth.jpeg);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background-color: #3333ff;
+            color: #ffffff;
+            padding: 10px;
+            border: 3px solid #ffcc00;
+            font-size: 24px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* Navigation on the left */
+        .left-column {
+            background-color: #ffcc00;
+            padding: 10px;
+            width: 150px;
+            float: left;
+            border: 3px solid #3333ff;
+            height: 100vh;
+        }
+
+        .left-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .left-column ul li {
+            margin: 15px 0;
+        }
+
+        .left-column ul li a {
+            text-decoration: none;
+            color: #0000ff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .left-column ul li a:visited {
+            color: #990099;
+        }
+
+        /* Main content area */
+        .right-column {
+            margin-left: 170px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 3px solid #3333ff;
+
+        }
+
+        /* Right column h2 */
+        .right-column h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Simple footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #000000;
+        }
+
+        .image-grid img {
+            border: 2px solid #3333ff;
+        }
+
+        /* GIF element */ 
+        .fun-gif {
+            display: block;
+            margin: 0 auto;
+            border: 3px solid #ffcc00;
+        }
+    </style>
+</head>
+
+
+<div class="left-column">
+    <ul>
+
+        <li><a href="index.html" onclick="showContent('page4')">Normal mode</a></li>
+        <li><a href="niceimages.html" onclick="showContent('page4')">animation</a></li>
+        <li><a href="journal.html" onclick="showContent('page6')">writing</a></li>
+        <li><a href="90s.html" onclick="showContent('page5')">contact</a></li>
+
+    </ul>
+</div>
+
+<div class="right-column">
+    <div id="page4" class="content">
+    
+        <p> Alien Invasion </p>
+        <iframe opacity="100" width="560" height="315" src="https://www.youtube.com/embed/2qUTVwWCow8?si=OJMWm3keB69vIuaT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        <p> Snake Movie </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QoQ_b01HhcY?si=KfKAHi_zuKIe_343" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p> Happy Birthday/The Lovers Trilogy </p>
+        
+    </div>
