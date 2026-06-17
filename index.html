@@ -15,7 +15,7 @@
             height: 20vh;
         }
 
-      
+        /* Header */
         header {
             grid-column: span 2;
             background-color: #ffffff;
@@ -25,7 +25,7 @@
             font-size: 14px;
         }
 
-  
+        /* Left column (links) */
         .left-column {
             background-color: #ffffff;
             padding: 3px;
@@ -56,7 +56,7 @@
             color: #007BFF;
         }
 
-      
+        /* Right column (content) */
         .right-column {
             padding: 8px;
         }
@@ -70,19 +70,20 @@
             margin-top: 0;
         }
 
+        /* Content hidden by default */
         .content {
             display: none;
         }
 
-        
+        /* Show first content by default */
         #page1 {
             display: block;
         }
 
         .image-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 10px; 
+            grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+            gap: 10px; /* Space between images */
             margin-top: 10px;
         }
     </style>
@@ -94,7 +95,7 @@
 
     <div class="left-column">
         <ul>
-            <li><a href="index.html" onclick="showContent('page1')">my movies</a></li>
+            <li><a href="index.html" onclick="showContent('page1')">portfolio</a></li>
             <li><a href="#page2" onclick="showContent('page2')">bio</a></li>
             <li><a href="#page3" onclick="showContent('page3')">resume</a></li>
             <li><a href="90s.html" onclick="showContent('page4')">Cool mode </a></li>
@@ -106,36 +107,83 @@
     <div class="right-column">
         <div id="page1" class="content">
 
-    <h3> web page under construction</h3>
+             <h1> portfolio </h1>
+    
 
-              <p>New Acquisition </p>
+          <p>New Acquisition </p>
+          <p style="font-size: 12px;"><a href="https://vimeo.com/1162734479?share=copy&fl=sv&fe=ci" > link to watch</a> 
+            <br> 
+            <br> starring Luanda Yasmin and Élise Black
+            <br> produced at the National Film and Television School, London, UK
+            <br> 2min</p>
             <p>
             </p>
                 <div class="image-grid">
                     <img src="images/NewAcquisition_01.jpg" alt="Image 1">
                     <img src="images/NewAcquisition_02.jpg" alt="Image 2">
                 </div>
-                <p style="font-size: 12px;"> NewFest 2025  <a href="https://newfest.org/events/shortsdykenyte/" > https://newfest.org/events/shortsdykenyte/</a> </p>
-            <p style="font-size: 12px;"> <a href="https://deadline.com/2025/09/newfest-2025-new-york-lgbtq-film-festival-full-lineup-1236527468/" > https://deadline.com/2025/09/newfest-2025-new-york-lgbtq-film-festival</a> </p>
+                <p style="font-size: 12px;"> NewFest 2025 Selection <br> <a href="https://newfest.org/events/shortsdykenyte/" > https://newfest.org/events/shortsdykenyte/</a> 
+          <br> <a href="https://deadline.com/2025/09/newfest-2025-new-york-lgbtq-film-festival-full-lineup-1236527468/" > https://deadline.com/2025/09/newfest-2025-new-york-lgbtq-film-festival</a>  
+           </p>
             <br>
             <br>
-                        <p>Coney 2012 </p>
-        <p>
-        </p>
+
+        <br> 
+
+                   <p>Coney 2012 </p>
+     <p style="font-size: 12px;"><a href="https://vimeo.com/1182060481?share=copy&fl=sv&fe=ci" > link to watch</a> 
+      <br> 
+      <br> cinematography by Jinho Myung, Avery Munson Clark
+      <br> starring Liam Barton, Nora Cheng
+        <br>7min 
+    
+    </p>
             <div class="image-grid">
                 <img src="images/liamwide.jpg" alt="Image 1">
                 <img src="images/still3.jpg" alt="Image 2">
                 <img src="images/still4.jpg" alt="Image 3">
                 <img src="images/ride.jpg" alt="Image 4">
             </div>
-    
-<br>
+    <br>
+          <br>
+
+            <p>Pushing - Pilot  </p>
+            <p style="font-size: 12px;"> 
+viewing link available upon request
+                  <br> 
+                  <br>
+                created and written by Renee Carlson and Maya Stark
+                <br> directed by Caledonia Abbey 
+                <br> an NYU Advanced Television production 
+            
+            <br> 30min </p>
+            </p>
+            </p>
+                <div class="image-grid">
+                    <img src="images/pushing1.jpg" alt="Image 1">
+                    <img src="images/pushing2.jpg" alt="Image 2">
+                    <img src="images/pushing3.jpg" alt="Image 3">
+                    <img src="images/pushing4.jpg" alt="Image 4">
+                </div>
+        <br> 
+        <br> 
+  
+    <br>
             <br>
  
         <br> 
-        <br> 
+    
 
-            <p>Icebergs </p>
+
+    
+        
+
+          <br>
+<p>         <p>Icebergs </p>
+       <p style="font-size: 12px;">
+         <br> cinematography by Avery Munson Clark
+             <br> starring Leila Dall'Olmo and Natalia Shane
+    <br> 8 min
             <p>
             </p>
                 <div class="image-grid">
@@ -144,29 +192,82 @@
                     <img src="images/icebergsstill3.png" alt="Image 3">
                     <img src="images/icebergsstill6.jpg" alt="Image 4">
                 </div>
+        
         <br> 
         <br> 
 
-clips, animation, videography, and other stuff  <a href="https://www.youtube.com/@caledoniaaa">here</a> </p>
-            
-          <br>
-          <br>
+            <div>
+          <p> Chess Fundamentals
+             </p>
+             <p style="font-size: 12px;">
+             <br> cinematography by Connor Keep
+             <br> starring Ethan Miller
+             <br> 15min
+             </p>
+          <div class="image-grid">
+            <img src="images/chess1.jpg" alt="Image 1">
+            <img src="images/chess5.jpg" alt="Image 2">
+            <img src="images/chess3.jpg" alt="Image 3">
+            <img src="images/chess4.jpg" alt="Image 4">
+</div>
+<br>
 
+<br>
+
+    <p> Julia and Cali, on the Road, in a Car, in the South, in America (work-in-progress) </p>
+    <p style="font-size: 12px;">
+             <br><a href="https://vimeo.com/1161178418/e8a7bedfbd?fl=ml&fe=ec" > link to watch</a>
+             <br> directed by Caledonia Abbey and Julia Barlow
+               <br> part one of an experimental documentary project filmed Summer 2023
+             <br> 8min
+    
+    </p>
+
+          <div class="image-grid">
+            <img src="images/prius.jpg" alt="Image 1">
+            <img src="images/pig.jpg" alt="Image 2">
+            <img src="images/help.jpg" alt="Image 3">
+            <img src="images/interview.jpg" alt="Image 4">
+</div>
+<br>
+<br>
+<br>
+
+    <h1> animation </h1>
+<div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1200875286?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:75%;height:75%;" title="geostune"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1200875603?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:75%;height:75%;" title="ALIENINVASION430"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1168181618?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:75%;height:75%;" title="Snake Movie"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1164459479?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:75%;height:75%;" title="full morph cycle_1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    
+          <div hidden style="padding:78.6% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1168181618?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="20" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:75%;height:75%;" title="Snake Movie"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div hidden style="padding:71.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1164459479?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:75%;height:75%;" title="full morph cycle_1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </p>
+    <div hidden>
+          <p> Julia and Cali, on the Road, in a Car, in the South, in America 
+             </p>
+          <div class="image-grid">
+            <img src="images/prius.jpg" alt="Image 1">
+            <img src="images/jail.jpg" alt="Image 2">
+            <img src="images/interview.jpg" alt="Image 3">
+            <img src="images/dollhouse.jpg" alt="Image 4">
+</div>
+dir. Julia Barlow and Caledonia Abbey.
+</div>
 <br> 
 <br> 
 <br> 
 <br> 
 </div>
-     
+     </div>
+     </body>
         <div id="page2" class="content">
-         
+            <p>Caledonia Abbey is a very talented filmmaker.</p>
             <img src="images/polaroid.png" alt="Image for page 2"
             width = '400'
             height = '250'>
-            <p> NYU Film & TV Production, Linguistics</p>
+            <p> NYU: Film & TV Production, Linguistics</p>
             <p> Chicago</p>
         </div>
-
         <div id="page3" class="content">
 <br>
         <h3> credits, film work, etc</h3>
@@ -188,6 +289,11 @@ clips, animation, videography, and other stuff  <a href="https://www.youtube.com
             <p> Production Assistant, Thalia Hall — Chicago, IL </p>
             <p>   </p>
        
+        </div>
+
+        <div id="page4" class="content">
+            <p>Animation fun</p>
+            <img src="images/aliens.gif" alt="Image for page 4">
         </div>
 
         <div id="page5" class="content">
@@ -212,5 +318,3 @@ clips, animation, videography, and other stuff  <a href="https://www.youtube.com
     </script>
 </body>
 </html>
-
-
