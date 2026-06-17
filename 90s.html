@@ -6,7 +6,7 @@
     <title>Website for Caledonia Abbey</title>
     <style>
         body {
-            font-family: "Helvetica";
+            font-family: Helvetica, sans-serif, sans-serif, sans-serif;
             background-color: #ffffcc;
             color: #000000;
             margin: 0;
@@ -14,6 +14,7 @@
             background-image: url(images/sloth.jpeg);
         }
 
+        /* Header */
         header {
             text-align: left;
             background-color: #3333ff;
@@ -34,7 +35,7 @@
             text-align: center;
         }
 
-   
+        /* Navigation on the left */
         .left-column {
             background-color: #ffcc00;
             padding: 10px;
@@ -64,7 +65,7 @@
             color: #990099;
         }
 
-  
+        /* Main content area */
         .right-column {
             margin-left: 170px;
             padding: 10px;
@@ -73,12 +74,12 @@
 
         }
 
-        
+
         .right-column h2 {
-            font-family: 'Helvetica';
+            font-family: Helvetica, sans-serif, sans-serif, sans-serif;;
         }
 
-
+    
         footer {
             text-align: center;
             margin-top: 20px;
@@ -86,10 +87,63 @@
             color: #000000;
         }
 
-        .image-grid img {
-            border: 2px solid #3333ff;
-        }
+.image-grid {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 10px;
+    overflow: hidden;
+}
 
+.image-grid img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    display: none;
+    border: 2px solid #3333ff;
+    background: #fff;
+}
+
+.image-grid img.active {
+    display: block;
+}
+
+.image-grid .prev,
+.image-grid .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.image-grid .prev {
+    left: 10px;
+}
+
+.image-grid .next {
+    right: 10px;
+}
+
+.image-grid .prev:hover,
+.image-grid .next:hover {
+    background: rgba(0,0,0,.9);
+}
+      .fun-gif {
+            display: block;
+            margin: 0 auto;
+            border: 3px solid #ffcc00;
+        }
+  
+
+        .imageof ul {
+            flo
+        }
     </style>
 </head>
 <body>
@@ -102,37 +156,158 @@
     <div class="left-column">
         <ul>
   
-            <li><a href="index.html" onclick="showContent('page4')">back to normal</a></li>
+            <li><a href="index.html" onclick="showContent('page4')">go back to normal mode by pressing this  </a></li>
 
         </ul>
     </div>
 
     <div class="right-column">
         <div id="page1" class="content">
-            <div class="header-3d">Movies</div>
-            <p>Coney 2012</p>
-            <div class="image-grid">
-                <img src="images/liamwide.jpg" alt="Image 1" width="150">
-                <img src="images/still3.jpg" alt="Image 2" width="150">
-                <img src="images/still4.jpg" alt="Image 3" width="150">
-                <img src="images/ride.jpg" alt="Image 4" width="150">
-            </div>
+            <div class="header-3d">My Movies</div>
            
+          <p>New Acquisition </p>
+          <p style="font-size: 12px;"><a href="https://vimeo.com/1162734479?share=copy&fl=sv&fe=ci" > link to watch</a> 
+            <br> 
+            <br> starring Luanda Yasmin and Élise Black
+            <br> produced at the National Film and Television School, London, UK
+            <br> 2min</p>
+            <p>
+            </p>
+                <div class="image-grid">
+                    <img src="images/NewAcquisition_01.jpg" alt="Image 1">
+                    <img src="images/NewAcquisition_02.jpg" alt="Image 2">
+                </div>
+                <p style="font-size: 12px;"> NewFest 2025 Selection <br> <a href="https://newfest.org/events/shortsdykenyte/" > https://newfest.org/events/shortsdykenyte/</a> 
+          <br> <a href="https://deadline.com/2025/09/newfest-2025-new-york-lgbtq-film-festival-full-lineup-1236527468/" > https://deadline.com/2025/09/newfest-2025-new-york-lgbtq-film-festival</a>  
+           </p>
+            <br>
+            <br>
+
+        <br> 
+
+                   <p>Coney 2012 </p>
+     <p style="font-size: 12px;"><a href="https://vimeo.com/1182060481?share=copy&fl=sv&fe=ci" > link to watch</a> 
+      <br> 
+      <br> cinematography by Jinho Myung, Avery Munson Clark
+      <br> starring Liam Barton, Nora Cheng
+        <br>7min 
+    
+    </p>
+            <div class="image-grid">
+                <img src="images/liamwide.jpg" alt="Image 1">
+                <img src="images/still3.jpg" alt="Image 2">
+                <img src="images/still4.jpg" alt="Image 3">
+                <img src="images/ride.jpg" alt="Image 4">
+            </div>
+    <br>
+          <br>
+
+            <p>Pushing - Pilot  </p>
+            <p style="font-size: 12px;"> 
+viewing link available upon request
+                  <br> 
+                  <br>
+                created and written by Renee Carlson and Maya Stark
+                <br> directed by Caledonia Abbey 
+                <br> an NYU Advanced Television production 
+            
+            <br> 30min </p>
+            </p>
+            </p>
+                <div class="image-grid">
+                    <img src="images/pushing1.jpg" alt="Image 1">
+                    <img src="images/pushing2.jpg" alt="Image 2">
+                    <img src="images/pushing3.jpg" alt="Image 3">
+                    <img src="images/pushing4.jpg" alt="Image 4">
+                </div>
+        <br> 
+        <br> 
+  
+    <br>
+            <br>
+ 
+        <br> 
+    
+
+
+    
         
-        </div>
 
+          <br>
+<p>         <p>Icebergs </p>
+       <p style="font-size: 12px;">
+         <br> cinematography by Avery Munson Clark
+             <br> starring Leila Dall'Olmo and Natalia Shane
+    <br> 8 min
+            <p>
+            </p>
+                <div class="image-grid">
+                    <img src="images/icebergstill1.jpg" alt="Image 1">
+                    <img src="images/icebergsstill2.jpg" alt="Image 2">
+                    <img src="images/icebergsstill3.png" alt="Image 3">
+                    <img src="images/icebergsstill6.jpg" alt="Image 4">
+                </div>
+        
+        <br> 
+        <br> 
+
+            <div>
+          <p> Chess Fundamentals
+             </p>
+             <p style="font-size: 12px;">
+             <br> cinematography by Connor Keep
+             <br> starring Ethan Miller
+             <br> 15min
+             </p>
+          <div class="image-grid">
+            <img src="images/chess1.jpg" alt="Image 1">
+            <img src="images/chess5.jpg" alt="Image 2">
+            <img src="images/chess3.jpg" alt="Image 3">
+            <img src="images/chess4.jpg" alt="Image 4">
+</div>
+<br>
+
+<br>
+
+    <p> Julia and Cali, on the Road, in a Car, in the South, in America (work-in-progress) </p>
+    <p style="font-size: 12px;">
+             <br><a href="https://vimeo.com/1161178418/e8a7bedfbd?fl=ml&fe=ec" > link to watch</a>
+             <br> directed by Caledonia Abbey and Julia Barlow
+               <br> part one of an experimental documentary project filmed Summer 2023
+             <br> 8min
+    
+    </p>
+
+          <div class="image-grid">
+            <img src="images/prius.jpg" alt="Image 1">
+            <img src="images/pig.jpg" alt="Image 2">
+            <img src="images/help.jpg" alt="Image 3">
+            <img src="images/interview.jpg" alt="Image 4">
+</div>
+<br>
+<br>
+<br>
+
+     
         <div id="page2" class="content">
+            <p>Caledonia Abbey is a very talented filmmaker. Brown hair. ~5'7"</p>
+            <img src="images/polaroid.png" alt="Image for page 2"
+            width = '400'
+            height = '250'>
+            <p> NYU: Film & TV Production, Linguistics</p>
+            <p> Chicago</p>
 
-            <h2>Bio</h2> 
-        <p> Caledonia Abbey is a very talented filmmaker.</p>
-     <img src="images/polaroid.png"  width="250" height="150"> 
-            <p>NYU: Film & TV Production, Linguistics, Politics<br>Chicago</p>
         </div>
 
         <div id="page3" class="content">
-    
-    
+<br>
+     
+        <div id="page2" class="content">
+
+ 
+        <p> other goodies, work, edits, etc can be found <a href="https://www.youtube.com/@caledoniaaa">here</a></p>
         </div>
+        <br>
 
         <div id="page5" class="content">
             <h2>Contact</h2>
@@ -160,6 +335,57 @@
             selectedContent.style.display = 'block';
         }
     </script>
+
+    <script>
+document.querySelectorAll('.image-grid').forEach(function(gallery){
+
+    const images = gallery.querySelectorAll('img');
+
+    if(images.length <= 1) return;
+
+    let current = 0;
+
+    images[0].classList.add('active');
+
+    const prev = document.createElement('button');
+    prev.className = 'prev';
+    prev.innerHTML = '&#10094;';
+
+    const next = document.createElement('button');
+    next.className = 'next';
+    next.innerHTML = '&#10095;';
+
+    gallery.appendChild(prev);
+    gallery.appendChild(next);
+
+    function showSlide(index){
+
+        images.forEach(function(img){
+            img.classList.remove('active');
+        });
+
+        images[index].classList.add('active');
+        current = index;
+    }
+
+    next.addEventListener('click', function(){
+        showSlide((current + 1) % images.length);
+    });
+
+    prev.addEventListener('click', function(){
+        showSlide((current - 1 + images.length) % images.length);
+    });
+
+    images.forEach(function(img){
+        img.addEventListener('click', function(){
+            if(this.requestFullscreen){
+                this.requestFullscreen();
+            }
+        });
+    });
+
+});
+</script>
 </body>
 </html>
 
